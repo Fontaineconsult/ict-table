@@ -1,0 +1,33 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-18T18:30:00Z"
+ },
+ "title": "WCAG x 508 Two Trees",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 3456,
+   "h": 2304,
+   "title": "WCAG 2.2 Success Criteria Map \u2014 36x24 in"
+  }
+ },
+ "order": [
+  "Main.dc.html"
+ ],
+ "notes": {
+  "brief": {
+   "x": 3536,
+   "y": 0,
+   "w": 360,
+   "text": "v4: single tree. The Person side is gone; each criterion carries the Section 508 FPC icons it serves.\nFour principle columns, guidelines flow in two sub-columns each.\nKey with the nine FPC one-liners sits under Robust.\nAAA = outlined level chip. 2.3.x carry the dashed 'no 508 counterpart' mark."
+  }
+ },
+ "designSystems": []
+}

@@ -1,0 +1,647 @@
+{
+  "schema_version": "2.0",
+  "generated": "2026-04-24",
+  "source_document": "table.html",
+  "document_caption_date": "2025-07-18",
+  "notes": "Canonical source list for table.html. Citation IDs [1]-[N] correspond to the <sup>[N]</sup> markers in the HTML. Edit here and regenerate via `node build.js`. Schema v2 adds tiering (1=primary authority, 2=advocacy/NGO), publisher_category, canonical_url vs. url (convenience), effective_date, summary, pull_quotes, and a status field for workflow tracking (active | needs_replacement | archived). Pass A verifies existing citations; Pass B discovers new ones from preselected_sites.",
+
+  "preselected_sites": [
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "ada.gov",
+      "purpose": "DOJ ADA portal — guidance, cases, settlements",
+      "reference_pages": [
+        {"url": "https://www.ada.gov/resources/disability-rights-guide/", "title": "A Guide to Disability Rights Laws", "topics": ["ada_general", "rehab_504"], "doc_type": "guidance_overview", "linked_citation_id": 1, "verified": false},
+        {"url": "https://www.ada.gov/resources/web-guidance/", "title": "Guidance on Web Accessibility and the ADA (2022)", "topics": ["ada_title_ii", "ada_title_iii", "web_accessibility"], "doc_type": "agency_guidance", "linked_citation_id": 9, "verified": false},
+        {"url": "https://www.ada.gov/resources/2024-03-08-web-rule/", "title": "Title II Web Accessibility Final Rule (2024) — Summary", "topics": ["ada_title_ii", "web_accessibility", "wcag_2_1_aa"], "doc_type": "regulation_summary", "linked_citation_id": 10, "verified": false},
+        {"url": "https://www.ada.gov/cases/", "title": "ADA Enforcement Cases & Settlements", "topics": ["enforcement"], "doc_type": "enforcement_index", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ada.gov/law-and-regs/", "title": "ADA Laws and Regulations Index", "topics": ["ada_general"], "doc_type": "regulation_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "federalregister.gov",
+      "purpose": "Rulemaking, IFRs, NPRMs, final rules",
+      "reference_pages": [
+        {"url": "https://www.federalregister.gov/documents/2024/04/24/2024-07758/nondiscrimination-on-the-basis-of-disability-accessibility-of-web-information-and-services-of-state", "title": "DOJ Title II Web Accessibility Final Rule (Federal Register publication)", "topics": ["ada_title_ii", "web_accessibility"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.federalregister.gov/agencies/civil-rights-division", "title": "DOJ Civil Rights Division — Federal Register index", "topics": ["ada_general"], "doc_type": "agency_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "ecfr.gov",
+      "purpose": "Current CFR text",
+      "reference_pages": [
+        {"url": "https://www.ecfr.gov/current/title-28/chapter-I/part-35", "title": "28 CFR Part 35 — ADA Title II regulations", "topics": ["ada_title_ii"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ecfr.gov/current/title-28/chapter-I/part-36", "title": "28 CFR Part 36 — ADA Title III regulations", "topics": ["ada_title_iii"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XIV/part-1630", "title": "29 CFR Part 1630 — EEOC Title I regulations", "topics": ["ada_title_i"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ecfr.gov/current/title-34/subtitle-B/chapter-I/part-104", "title": "34 CFR Part 104 — §504 regulations (Education)", "topics": ["rehab_504"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-84", "title": "45 CFR Part 84 — §504 regulations (HHS)", "topics": ["rehab_504"], "doc_type": "regulation", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ecfr.gov/current/title-36/chapter-XI/part-1194", "title": "36 CFR Part 1194 — §508 Revised Standards", "topics": ["rehab_508"], "doc_type": "regulation", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "regulations.gov",
+      "purpose": "Dockets and public comments",
+      "reference_pages": [
+        {"url": "https://www.regulations.gov/docket/DOJ-CRT-2023-0007", "title": "DOJ Title II Web Accessibility docket (DOJ-CRT-2023-0007)", "topics": ["ada_title_ii", "web_accessibility"], "doc_type": "docket", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "section508.gov",
+      "purpose": "GSA ICT accessibility hub",
+      "reference_pages": [
+        {"url": "https://www.section508.gov/manage/laws-and-policies/", "title": "Section 508 Laws and Policies", "topics": ["rehab_508"], "doc_type": "agency_guidance", "linked_citation_id": 7, "verified": false},
+        {"url": "https://www.section508.gov/develop/applicability-conformance/", "title": "Section 508 Applicability & Conformance", "topics": ["rehab_508", "wcag_2_0_aa"], "doc_type": "agency_guidance", "linked_citation_id": 11, "verified": false},
+        {"url": "https://www.section508.gov/buy/", "title": "Buying Accessible — §508 procurement guidance", "topics": ["rehab_508", "ict_procurement"], "doc_type": "agency_guidance", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.section508.gov/test/", "title": "Testing for accessibility", "topics": ["rehab_508", "testing"], "doc_type": "agency_guidance", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "access-board.gov",
+      "purpose": "ICT Refresh standards, ADAAG",
+      "reference_pages": [
+        {"url": "https://www.access-board.gov/ict/", "title": "Information and Communication Technology (ICT) Standards home", "topics": ["rehab_508"], "doc_type": "standard", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.access-board.gov/ada/", "title": "ADA Accessibility Standards home", "topics": ["ada_standards"], "doc_type": "standard", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "eeoc.gov",
+      "purpose": "Title I employment enforcement",
+      "reference_pages": [
+        {"url": "https://www.eeoc.gov/disability-discrimination", "title": "Disability Discrimination — EEOC overview", "topics": ["ada_title_i"], "doc_type": "guidance_overview", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.eeoc.gov/laws/guidance/enforcement-guidance-reasonable-accommodation-and-undue-hardship-under-ada", "title": "Enforcement Guidance: Reasonable Accommodation & Undue Hardship under the ADA", "topics": ["ada_title_i", "reasonable_accommodation"], "doc_type": "enforcement_guidance", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "hhs.gov",
+      "purpose": "§504 under HHS (civil-rights subdir)",
+      "reference_pages": [
+        {"url": "https://www.hhs.gov/civil-rights/for-individuals/disability/index.html", "title": "HHS OCR — Disability Rights index", "topics": ["rehab_504"], "doc_type": "guidance_overview", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.hhs.gov/civil-rights/for-providers/laws-regulations-guidance/laws/section-504/index.html", "title": "HHS §504 Laws & Regulations", "topics": ["rehab_504"], "doc_type": "regulation_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "ed.gov",
+      "purpose": "§504 under ED, OCR resolution letters",
+      "reference_pages": [
+        {"url": "https://www.ed.gov/about/offices/list/ocr/504faq.html", "title": "ED OCR — §504 FAQ", "topics": ["rehab_504"], "doc_type": "guidance_overview", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.ed.gov/about/offices/list/ocr/", "title": "ED Office for Civil Rights home", "topics": ["rehab_504"], "doc_type": "agency_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "justice.gov",
+      "purpose": "DOJ Civil Rights Division (/crt)",
+      "reference_pages": [
+        {"url": "https://www.justice.gov/crt/disability-rights-section", "title": "DOJ Disability Rights Section home", "topics": ["ada_general"], "doc_type": "agency_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "federal_statutes_regulations", "domain": "congress.gov",
+      "purpose": "Statute text, CRS reports",
+      "reference_pages": [
+        {"url": "https://www.congress.gov/bill/101st-congress/senate-bill/933", "title": "Americans with Disabilities Act of 1990 (S.933, 101st Congress)", "topics": ["ada_general"], "doc_type": "statute", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "leginfo.legislature.ca.gov",
+      "purpose": "Official CA statute text",
+      "reference_pages": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=11135.", "title": "Cal. Gov. Code §11135", "topics": ["ca_gov_code_11135_title_ii", "ca_gov_code_11135_504"], "doc_type": "statute_section", "linked_citation_id": 4, "verified": false, "notes": "Canonical replacement for Justia URL in citation [4]."},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=51.", "title": "Cal. Civ. Code §51 (Unruh Civil Rights Act)", "topics": ["ca_unruh", "ada_title_iii"], "doc_type": "statute_section", "linked_citation_id": 6, "verified": false, "notes": "Canonical replacement for Casetext URL in citation [6]."},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=7405.", "title": "Cal. Gov. Code §7405", "topics": ["ca_gov_code_7405", "rehab_508"], "doc_type": "statute_section", "linked_citation_id": null, "verified": false},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12940.", "title": "Cal. Gov. Code §12940 (FEHA core prohibitions)", "topics": ["ca_feha", "ada_title_i"], "doc_type": "statute_section", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "calcivilrights.ca.gov",
+      "purpose": "CRD (formerly DFEH)",
+      "reference_pages": [
+        {"url": "https://calcivilrights.ca.gov/peoplewithdisabilities/", "title": "People with Disabilities", "topics": ["ca_feha", "disability_rights_general"], "doc_type": "guidance_overview", "linked_citation_id": 3, "verified": false},
+        {"url": "https://calcivilrights.ca.gov/employment/", "title": "Employment (CRD)", "topics": ["ca_feha"], "doc_type": "guidance_overview", "linked_citation_id": 13, "verified": false},
+        {"url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2023/11/DFEH_EmploymentDiscriminationBrochure.pdf", "title": "FEHA Employment Discrimination Brochure (PDF)", "topics": ["ca_feha", "ada_title_i"], "doc_type": "agency_guidance", "linked_citation_id": 2, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "dor.ca.gov",
+      "purpose": "DOR, §7405, AB 434 toolkit",
+      "reference_pages": [
+        {"url": "https://www.dor.ca.gov/Home/Laws", "title": "CA DOR — Laws", "topics": ["ca_gov_code_7405", "ca_gov_code_11135_title_ii"], "doc_type": "regulation_index", "linked_citation_id": 5, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "cdt.ca.gov",
+      "purpose": "CA Dept of Technology — SAM 4833, SIMM 25A/25B",
+      "reference_pages": [
+        {"url": "https://cdt.ca.gov/policy/", "title": "CDT Policy home (SAM/SIMM index)", "topics": ["ca_ict_policy"], "doc_type": "policy_index", "linked_citation_id": null, "verified": false, "notes": "Pass B: locate SAM 4833 (ICT accessibility policy) and SIMM 25A/25B (implementation) exact URLs."}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "webstandards.ca.gov",
+      "purpose": "CDT web accessibility guidance",
+      "reference_pages": [
+        {"url": "https://webstandards.ca.gov/accessibility/", "title": "CA Web Standards — Accessibility", "topics": ["ca_web_accessibility"], "doc_type": "agency_guidance", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "oag.ca.gov",
+      "purpose": "CA AG, Unruh enforcement",
+      "reference_pages": [
+        {"url": "https://oag.ca.gov/disability", "title": "CA AG — Disability Rights", "topics": ["ca_unruh", "disability_rights_general"], "doc_type": "agency_index", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "ati.calstate.edu",
+      "purpose": "CSU Accessible Technology Initiative",
+      "reference_pages": [
+        {"url": "https://ati.calstate.edu/", "title": "CSU ATI home", "topics": ["csu_ati", "general"], "doc_type": "institutional_policy", "linked_citation_id": 16, "verified": false},
+        {"url": "https://ati.calstate.edu/procurement", "title": "CSU ATI — Procurement", "topics": ["csu_ati", "ict_procurement", "rehab_508"], "doc_type": "institutional_policy", "linked_citation_id": 17, "verified": false},
+        {"url": "https://ati.calstate.edu/instructional-materials", "title": "CSU ATI — Instructional Materials", "topics": ["csu_ati", "instructional_materials"], "doc_type": "institutional_policy", "linked_citation_id": null, "verified": false},
+        {"url": "https://ati.calstate.edu/web", "title": "CSU ATI — Web", "topics": ["csu_ati", "web_accessibility"], "doc_type": "institutional_policy", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "california", "domain": "calstate.edu",
+      "purpose": "CSU executive orders, system policy",
+      "reference_pages": [
+        {"url": "https://www.calstate.edu/eo/EO-1111.html", "title": "CSU Executive Order 1111 — Accessible Technology Initiative", "topics": ["csu_ati"], "doc_type": "institutional_policy", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 1, "category": "standards", "domain": "w3.org",
+      "purpose": "W3C WAI — WCAG, ARIA",
+      "reference_pages": [
+        {"url": "https://www.w3.org/WAI/standards-guidelines/wcag/", "title": "Web Content Accessibility Guidelines (WCAG) overview", "topics": ["wcag", "general"], "doc_type": "standard_index", "linked_citation_id": 8, "verified": false},
+        {"url": "https://www.w3.org/TR/WCAG21/", "title": "WCAG 2.1 specification", "topics": ["wcag_2_1_aa"], "doc_type": "standard", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.w3.org/TR/WCAG22/", "title": "WCAG 2.2 specification", "topics": ["wcag_2_2"], "doc_type": "standard", "linked_citation_id": null, "verified": false},
+        {"url": "https://www.w3.org/TR/wai-aria-1.2/", "title": "WAI-ARIA 1.2 specification", "topics": ["aria"], "doc_type": "standard", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 2, "category": "advocacy_ngo", "domain": "nad.org",
+      "purpose": "National Association of the Deaf — captioning litigation",
+      "reference_pages": [
+        {"url": "https://www.nad.org/resources/technology/captioning-for-online-video/", "title": "NAD — Captioning for Online Video", "topics": ["captioning", "ada_title_iii"], "doc_type": "advocacy_position", "linked_citation_id": null, "verified": false}
+      ]
+    },
+    {
+      "tier": 2, "category": "advocacy_ngo", "domain": "afb.org",
+      "purpose": "American Foundation for the Blind — blindness policy",
+      "reference_pages": [
+        {"url": "https://www.afb.org/research-and-initiatives/public-policy", "title": "AFB Public Policy home", "topics": ["blindness_policy", "ada_general"], "doc_type": "advocacy_position", "linked_citation_id": null, "verified": false}
+      ]
+    }
+  ],
+
+  "columns": [
+    {
+      "id": "ada_title_i",
+      "layer": "federal",
+      "label": "ADA Title I",
+      "sublabel": "Employment",
+      "url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "pairs_with": "ca_feha"
+    },
+    {
+      "id": "ada_title_ii",
+      "layer": "federal",
+      "label": "ADA Title II",
+      "sublabel": "Public Entities",
+      "url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "pairs_with": "ca_gov_code_11135_title_ii"
+    },
+    {
+      "id": "ada_title_iii",
+      "layer": "federal",
+      "label": "ADA Title III",
+      "sublabel": "Public Accommodations",
+      "url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "pairs_with": "ca_unruh"
+    },
+    {
+      "id": "rehab_504",
+      "layer": "federal",
+      "label": "Rehab §504",
+      "sublabel": "Non Discrimination",
+      "url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "pairs_with": "ca_gov_code_11135_504"
+    },
+    {
+      "id": "rehab_508",
+      "layer": "federal",
+      "label": "Rehab §508",
+      "sublabel": "ICT Accessibility",
+      "url": "https://www.section508.gov/manage/laws-and-policies/",
+      "pairs_with": "ca_gov_code_7405"
+    },
+    {
+      "id": "ca_feha",
+      "layer": "state",
+      "label": "CA FEHA",
+      "url": "https://calcivilrights.ca.gov/employment/",
+      "pairs_with": "ada_title_i"
+    },
+    {
+      "id": "ca_gov_code_11135_title_ii",
+      "layer": "state",
+      "label": "Gov Code §11135",
+      "url": "https://law.justia.com/codes/california/2011/gov/title-2/11135-11139.7/11135/",
+      "pairs_with": "ada_title_ii"
+    },
+    {
+      "id": "ca_unruh",
+      "layer": "state",
+      "label": "Civ Code §51 (Unruh)",
+      "url": "https://casetext.com/statute/california-codes/california-civil-code/division-1-persons/part-2-personal-rights/section-51-unruh-civil-rights-act",
+      "pairs_with": "ada_title_iii"
+    },
+    {
+      "id": "ca_gov_code_11135_504",
+      "layer": "state",
+      "label": "Gov Code §11135",
+      "url": "https://law.justia.com/codes/california/2011/gov/title-2/11135-11139.7/11135/",
+      "pairs_with": "rehab_504"
+    },
+    {
+      "id": "ca_gov_code_7405",
+      "layer": "state",
+      "label": "Gov Code §7405",
+      "url": "https://www.dor.ca.gov/Home/Laws",
+      "pairs_with": "rehab_508"
+    }
+  ],
+
+  "citations": [
+    {
+      "id": 1,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "active",
+      "url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "canonical_url": "https://www.ada.gov/resources/disability-rights-guide/",
+      "alternate_urls": [],
+      "short_title": "A Guide to Disability Rights Laws",
+      "official_title": null,
+      "publisher": "U.S. Department of Justice, Civil Rights Division",
+      "type": "agency_guidance",
+      "jurisdiction": "federal",
+      "topics": ["ada_title_i", "ada_title_ii", "ada_title_iii", "rehab_504", "general"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "General overview of ADA Titles I-III and §504; used as the broad federal anchor citation throughout the table."
+    },
+    {
+      "id": 2,
+      "tier": 1,
+      "publisher_category": "state_agency",
+      "status": "active",
+      "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2023/11/DFEH_EmploymentDiscriminationBrochure.pdf",
+      "canonical_url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2023/11/DFEH_EmploymentDiscriminationBrochure.pdf",
+      "alternate_urls": [],
+      "short_title": "FEHA Employment Discrimination Brochure",
+      "official_title": null,
+      "publisher": "California Civil Rights Department (formerly DFEH)",
+      "type": "agency_guidance",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_feha", "ada_title_i"],
+      "effective_date": null,
+      "last_updated": "2023-11",
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "PDF brochure; URL uses legacy DFEH filename. Pass A should check for newer version."
+    },
+    {
+      "id": 3,
+      "tier": 1,
+      "publisher_category": "state_agency",
+      "status": "active",
+      "url": "https://calcivilrights.ca.gov/peoplewithdisabilities/",
+      "canonical_url": "https://calcivilrights.ca.gov/peoplewithdisabilities/",
+      "alternate_urls": [],
+      "short_title": "People with Disabilities (CRD)",
+      "official_title": null,
+      "publisher": "California Civil Rights Department",
+      "type": "agency_guidance",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_feha", "ada_title_i", "disability_rights_general"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "CA CRD landing page for disability rights; most heavily cited CA state source."
+    },
+    {
+      "id": 4,
+      "tier": 1,
+      "publisher_category": "statute_mirror",
+      "status": "needs_replacement",
+      "url": "https://law.justia.com/codes/california/2011/gov/title-2/11135-11139.7/11135/",
+      "canonical_url": null,
+      "alternate_urls": [],
+      "short_title": "Cal. Gov. Code §11135",
+      "official_title": "California Government Code Section 11135",
+      "publisher": "Justia (third-party statute mirror)",
+      "type": "statute",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_gov_code_11135_title_ii", "ca_gov_code_11135_504"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "2011 snapshot. Pass A target: replace with leginfo.legislature.ca.gov URL for §11135."
+    },
+    {
+      "id": 5,
+      "tier": 1,
+      "publisher_category": "state_agency",
+      "status": "active",
+      "url": "https://www.dor.ca.gov/Home/Laws",
+      "canonical_url": "https://www.dor.ca.gov/Home/Laws",
+      "alternate_urls": [],
+      "short_title": "CA Department of Rehabilitation — Laws",
+      "official_title": null,
+      "publisher": "California Department of Rehabilitation",
+      "type": "agency_guidance",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_gov_code_7405", "ca_gov_code_11135_title_ii", "ca_gov_code_11135_504"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Landing page listing §7405 and §11135; Pass A should verify link still resolves — DOR has restructured its site."
+    },
+    {
+      "id": 6,
+      "tier": 1,
+      "publisher_category": "statute_mirror",
+      "status": "needs_replacement",
+      "url": "https://casetext.com/statute/california-codes/california-civil-code/division-1-persons/part-2-personal-rights/section-51-unruh-civil-rights-act",
+      "canonical_url": null,
+      "alternate_urls": [],
+      "short_title": "Cal. Civ. Code §51 (Unruh Civil Rights Act)",
+      "official_title": "California Civil Code Section 51",
+      "publisher": "Casetext (third-party statute mirror)",
+      "type": "statute",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_unruh", "ada_title_iii"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Pass A target: replace with leginfo.legislature.ca.gov URL for Civ Code §51."
+    },
+    {
+      "id": 7,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "active",
+      "url": "https://www.section508.gov/manage/laws-and-policies/",
+      "canonical_url": "https://www.section508.gov/manage/laws-and-policies/",
+      "alternate_urls": [],
+      "short_title": "Section 508 Laws and Policies",
+      "official_title": null,
+      "publisher": "U.S. General Services Administration (GSA) — Section508.gov",
+      "type": "agency_guidance",
+      "jurisdiction": "federal",
+      "topics": ["rehab_508"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Primary federal §508 anchor."
+    },
+    {
+      "id": 8,
+      "tier": 1,
+      "publisher_category": "standards_body",
+      "status": "active",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "canonical_url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "alternate_urls": [],
+      "short_title": "Web Content Accessibility Guidelines (WCAG)",
+      "official_title": null,
+      "publisher": "W3C Web Accessibility Initiative (WAI)",
+      "type": "international_standard",
+      "jurisdiction": "international",
+      "topics": ["wcag", "general"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Canonical WCAG overview page; links to WCAG 2.0, 2.1, 2.2."
+    },
+    {
+      "id": 9,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "active",
+      "url": "https://www.ada.gov/resources/web-guidance/",
+      "canonical_url": "https://www.ada.gov/resources/web-guidance/",
+      "alternate_urls": [],
+      "short_title": "Guidance on Web Accessibility and the ADA",
+      "official_title": null,
+      "publisher": "U.S. Department of Justice",
+      "type": "agency_guidance",
+      "jurisdiction": "federal",
+      "topics": ["ada_title_ii", "ada_title_iii", "web_accessibility"],
+      "effective_date": "2022-03-18",
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "2022 DOJ web accessibility guidance; still cited for Title III given no final rule."
+    },
+    {
+      "id": 10,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "active",
+      "url": "https://www.ada.gov/resources/2024-03-08-web-rule/",
+      "canonical_url": "https://www.ada.gov/resources/2024-03-08-web-rule/",
+      "alternate_urls": [],
+      "short_title": "DOJ Title II Web Accessibility Final Rule (2024)",
+      "official_title": null,
+      "publisher": "U.S. Department of Justice",
+      "type": "regulation",
+      "jurisdiction": "federal",
+      "topics": ["ada_title_ii", "web_accessibility", "wcag_2_1_aa"],
+      "effective_date": "2024-04-24",
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Compliance deadlines: April 24, 2026 (pop ≥50k) and April 26, 2027 (smaller entities + special districts). Pass A: fetch federalregister.gov companion URL for alternate_urls."
+    },
+    {
+      "id": 11,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "active",
+      "url": "https://www.section508.gov/develop/applicability-conformance/",
+      "canonical_url": "https://www.section508.gov/develop/applicability-conformance/",
+      "alternate_urls": [],
+      "short_title": "Section 508 Applicability & Conformance",
+      "official_title": null,
+      "publisher": "U.S. GSA — Section508.gov",
+      "type": "agency_guidance",
+      "jurisdiction": "federal",
+      "topics": ["rehab_508", "wcag_2_0_aa"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Reflects 2017 508 Refresh."
+    },
+    {
+      "id": 12,
+      "tier": 1,
+      "publisher_category": "academic_summary",
+      "status": "needs_replacement",
+      "url": "https://itaccessibility.uiowa.edu/news/joint-DOJ-OCR-letter",
+      "canonical_url": null,
+      "alternate_urls": [],
+      "short_title": "Joint DOJ/OCR Letter on Web Accessibility (U. Iowa summary)",
+      "official_title": null,
+      "publisher": "University of Iowa IT Accessibility",
+      "type": "academic_summary",
+      "jurisdiction": "federal",
+      "topics": ["rehab_504", "ada_title_ii", "hhs_504_rule_2024"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Pass A target: replace with primary HHS §504 final rule (2024) from federalregister.gov and the primary DOJ/OCR dear-colleague letter from ada.gov or ed.gov."
+    },
+    {
+      "id": 13,
+      "tier": 1,
+      "publisher_category": "state_agency",
+      "status": "active",
+      "url": "https://calcivilrights.ca.gov/employment/",
+      "canonical_url": "https://calcivilrights.ca.gov/employment/",
+      "alternate_urls": [],
+      "short_title": "Employment (CRD)",
+      "official_title": null,
+      "publisher": "California Civil Rights Department",
+      "type": "agency_guidance",
+      "jurisdiction": "ca_state",
+      "topics": ["ca_feha"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "CRD employment landing page."
+    },
+    {
+      "id": 14,
+      "tier": 1,
+      "publisher_category": "federal_agency_archived",
+      "status": "needs_replacement",
+      "url": "https://archive.ada.gov/pcatoolkit/chap2toolkit.htm",
+      "canonical_url": null,
+      "alternate_urls": [],
+      "short_title": "ADA Title II PCA Toolkit, Chapter 2",
+      "official_title": null,
+      "publisher": "U.S. DOJ (archived ADA.gov)",
+      "type": "agency_guidance_archived",
+      "jurisdiction": "federal",
+      "topics": ["ada_title_ii", "ada_coordinator"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Pass A target: find current ada.gov equivalent on ADA Coordinator requirements."
+    },
+    {
+      "id": 15,
+      "tier": 1,
+      "publisher_category": "federal_agency",
+      "status": "needs_replacement",
+      "url": "https://www.secretservice.gov/section508",
+      "canonical_url": null,
+      "alternate_urls": [],
+      "short_title": "U.S. Secret Service — Section 508 page",
+      "official_title": null,
+      "publisher": "U.S. Secret Service",
+      "type": "agency_guidance",
+      "jurisdiction": "federal",
+      "topics": ["rehab_508", "section_508_agency_example"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "Pass A target: replace with a representative §508 enforcement/complaint source from section508.gov or gsa.gov."
+    },
+    {
+      "id": 16,
+      "tier": 1,
+      "publisher_category": "state_institutional",
+      "status": "active",
+      "url": "https://ati.calstate.edu/",
+      "canonical_url": "https://ati.calstate.edu/",
+      "alternate_urls": [],
+      "short_title": "CSU Accessible Technology Initiative (ATI)",
+      "official_title": null,
+      "publisher": "California State University",
+      "type": "institutional_policy",
+      "jurisdiction": "ca_state",
+      "topics": ["csu_ati", "general"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "CSU ATI home; cited for CSU-systemwide accessibility framing throughout table."
+    },
+    {
+      "id": 17,
+      "tier": 1,
+      "publisher_category": "state_institutional",
+      "status": "active",
+      "url": "https://ati.calstate.edu/procurement",
+      "canonical_url": "https://ati.calstate.edu/procurement",
+      "alternate_urls": [],
+      "short_title": "CSU ATI — Procurement",
+      "official_title": null,
+      "publisher": "California State University",
+      "type": "institutional_policy",
+      "jurisdiction": "ca_state",
+      "topics": ["csu_ati", "ict_procurement", "rehab_508"],
+      "effective_date": null,
+      "last_updated": null,
+      "summary": null,
+      "pull_quotes": [],
+      "http_status": null,
+      "last_verified": null,
+      "notes": "CSU ATI procurement process and Equivalent Facilitation memos."
+    }
+  ]
+}

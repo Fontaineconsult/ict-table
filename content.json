@@ -1,0 +1,298 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-04-24",
+  "source_document": "table.html",
+  "references": "sources.json",
+  "document_caption_date": "2025-07-18",
+  "notes": "Content matrix mirroring table.html. Each cell is a list of clauses; a clause has optional 'label' (bolded prefix in HTML, e.g. 'CA FEHA' or 'Grievance'), 'text' (the clause body), and 'citations' (integer array referencing ids in sources.json/citations). Rows are grouped by row_group (Legal Overview, Content Affected, Conformance Processes). Cells are keyed by column id from sources.json/columns. Column ids ada_title_* and rehab_* also implicitly carry the CA state overlay in cells; state overlays appear as secondary clauses with 'label' set to the state anchor ('CA FEHA', '§11135', 'Unruh', '§7405'). Topical overlays ('Grievance', 'Benchmark', 'Protected', 'Approach') follow the same pattern with a different label. Character conventions: non-breaking hyphens (U+2011) and curly quotes are preserved from the HTML; '<15' and '<5' are stored as literals (HTML escapes them to &lt;).",
+
+  "column_order": ["ada_title_i", "ada_title_ii", "ada_title_iii", "rehab_504", "rehab_508"],
+
+  "caption": "Federal & California Accessibility Laws: Expert Quick‑Reference (Incorporating CSU ATI Insights & Detailed Legal Context, As of July 18, 2025)",
+  "page_title": "Accessibility Laws: Expert Quick‑Reference",
+
+  "row_groups": [
+    {
+      "id": "legal_overview",
+      "label": "Legal Overview",
+      "rows": [
+        {
+          "id": "primary_purpose_and_scope",
+          "label": "Primary Purpose & Scope",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Prohibits discrimination in all aspects of employment (hiring, benefits, workplace systems).", "citations": [1] },
+              { "label": "CA FEHA", "text": "Covers employers with ≥5 employees; broader “disability” definition (limits major life activity).", "citations": [2, 3] }
+            ],
+            "ada_title_ii": [
+              { "text": "Requires state/local government programs, services, and digital content be equally accessible.", "citations": [1] },
+              { "label": "§11135", "text": "Mirrors Title II for state‑funded activities; CSU ATI leverages this for systemwide accessibility in educational services.", "citations": [4, 5] }
+            ],
+            "ada_title_iii": [
+              { "text": "Ensures private businesses (“public accommodations”) provide equal access to goods/services, including websites/apps.", "citations": [1] },
+              { "label": "Unruh", "text": "ADA violations constitute state‑law violations; broader anti-discrimination in businesses.", "citations": [6] }
+            ],
+            "rehab_504": [
+              { "text": "Prohibits exclusion or denial of benefits in any program/activity receiving federal funds.", "citations": [1] },
+              { "label": "§11135", "text": "Extends non‑discrimination to state‑funded programs; CSU ATI applies this to CSU campuses as state-funded entities.", "citations": [4, 5] }
+            ],
+            "rehab_508": [
+              { "text": "Mandates accessible electronic and information technology for federal agencies.", "citations": [1, 7] },
+              { "label": "§7405", "text": "California state agencies must follow 508 standards; CSU ATI aligns procurement with these for state agencies.", "citations": [5] }
+            ]
+          }
+        },
+        {
+          "id": "consequences_and_grievance",
+          "label": "Consequences & Grievance Process",
+          "cells": {
+            "ada_title_i": [
+              { "text": "EEOC/DFEH complaints, mediation, lawsuits; FEHA punitive damages allowed.", "citations": [1, 3] },
+              { "label": "Grievance", "text": "File with EEOC or DFEH within deadlines (180/300 days federal, 3 years CA).", "citations": [1, 13] }
+            ],
+            "ada_title_ii": [
+              { "text": "DOJ investigations, injunctive relief, TA plans.", "citations": [1] },
+              { "label": "Grievance", "text": "File with DOJ or state agency; CSU ATI involves annual reporting; ADA Coordinator required for entities ≥50 employees.", "citations": [1, 14] }
+            ],
+            "ada_title_iii": [
+              { "text": "DOJ enforcement, Unruh private suits; statutory damages per violation ($4k min).", "citations": [1, 6] },
+              { "label": "Grievance", "text": "Civil lawsuits under Unruh; no formal process, direct to court.", "citations": [1, 6] }
+            ],
+            "rehab_504": [
+              { "text": "OCR/HHS complaints, corrective action, funding risk.", "citations": [1] },
+              { "label": "Grievance", "text": "File with OCR or agency office; CSU ATI yearly reports track progress; §504 coordinator required for entities ≥15 employees.", "citations": [1] }
+            ],
+            "rehab_508": [
+              { "text": "Procurement holds, vendor CAPs; no private action.", "citations": [7] },
+              { "label": "Grievance", "text": "Agency compliance review; CSU ATI uses status levels for auditing; complaints processed like §504.", "citations": [15, 7] }
+            ]
+          }
+        },
+        {
+          "id": "who_must_comply_and_protected",
+          "label": "Who Must Comply & Protected Parties",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Employers ≥15 employees; covers employees & applicants with disabilities.", "citations": [1] },
+              { "label": "Protected", "text": "Mobility, sensory, cognitive, mental health; qualified individuals needing accommodations.", "citations": [1, 2, 3] }
+            ],
+            "ada_title_ii": [
+              { "text": "All state/local government entities; protects individuals accessing public services.", "citations": [1] },
+              { "label": "Protected", "text": "Citizens, students, constituents; CSU ATI emphasizes protection for CSU students, faculty, staff in public university settings.", "citations": [1] }
+            ],
+            "ada_title_iii": [
+              { "text": "Businesses & nonprofits open to the public; protects customers & visitors.", "citations": [1] },
+              { "label": "Protected", "text": "Patrons, online users; includes virtual services.", "citations": [1, 6] }
+            ],
+            "rehab_504": [
+              { "text": "Recipients of federal aid (schools, hospitals, agencies); protects participants.", "citations": [1] },
+              { "label": "Protected", "text": "Students, patients, clients; CSU ATI focuses on CSU students and faculty in federally funded programs.", "citations": [1] }
+            ],
+            "rehab_508": [
+              { "text": "Federal agencies and vendors supplying ICT; protects employees & public users.", "citations": [7] },
+              { "label": "Protected", "text": "Applicants, citizens; CSU ATI extends to public users of CSU ICT.", "citations": [7, 5] }
+            ]
+          }
+        },
+        {
+          "id": "key_legal_standard",
+          "label": "Key Legal Standard",
+          "cells": {
+            "ada_title_i": [
+              { "text": "“Reasonable accommodation” unless undue hardship.", "citations": [1, 3] },
+              { "label": "Benchmark", "text": "WCAG 2.1 AA de facto standard; interactive process for accommodations.", "citations": [8, 3] }
+            ],
+            "ada_title_ii": [
+              { "text": "“Undue burden”/“fundamental alteration” exceptions; requires effective communication.", "citations": [1, 9] },
+              { "label": "Benchmark", "text": "WCAG 2.1 AA (2024 DOJ rule); CSU ATI uses capability maturity model for continuous improvement.", "citations": [10] }
+            ],
+            "ada_title_iii": [
+              { "text": "“Undue burden”/“fundamental alteration” exceptions; auxiliary aids mandated.", "citations": [1] },
+              { "label": "Benchmark", "text": "WCAG 2.1 AA recommended; ADA violations trigger Unruh.", "citations": [9, 6] }
+            ],
+            "rehab_504": [
+              { "text": "Reasonable modifications and auxiliary aids required unless undue hardship.", "citations": [1] },
+              { "label": "Approach", "text": "Outcome‑focused; use WCAG as guidance; CSU ATI prioritizes timely accessible formats.", "citations": [8] }
+            ],
+            "rehab_508": [
+              { "text": "“Undue burden” defense; legacy ICT exemptions apply.", "citations": [7] },
+              { "label": "Benchmark", "text": "WCAG 2.0 AA per 2017 Refresh; CSU ATI aligns with updated standards; no update to 2.1/2.2 as of 2025.", "citations": [11] }
+            ]
+          }
+        },
+        {
+          "id": "recent_updates",
+          "label": "Recent Updates",
+          "cells": {
+            "ada_title_i": [
+              { "text": "FEHA SB 1137 (2025): broader “disability” definition; SB 1090 extends claims deadlines.", "citations": [3] }
+            ],
+            "ada_title_ii": [
+              { "text": "DOJ Title II Final Rule (Apr 2024): WCAG 2.1 AA mandate; enforcement trends include increased compliance focus post-deadlines; CSU ATI continues under EO 1111 (2018).", "citations": [10] }
+            ],
+            "ada_title_iii": [
+              { "text": "DOJ Title III regs pending (no final rule as of July 2025); continue WCAG 2.1 AA; SB-84 for cure period stalled.", "citations": [9] }
+            ],
+            "rehab_504": [
+              { "text": "HHS §504 update (2024): WCAG 2.1 AA for health/education portals; deadlines May 2026 (≥15 employees).", "citations": [12] }
+            ],
+            "rehab_508": [
+              { "text": "508 Refresh (2017) baseline; no refresh to WCAG 2.1/2.2 in 2025; watch for WCAG 2.1/2.2 alignment; CSU ATI promotes ongoing capacity building.", "citations": [11] }
+            ]
+          }
+        },
+        {
+          "id": "exceptions",
+          "label": "Exceptions",
+          "cells": {
+            "ada_title_i": [
+              { "text": "“Undue hardship” defense; “direct threat” to health/safety; must be a “qualified individual” performing essential functions with/without accommodation; religious-organization hiring preference; employers <15 excluded.", "citations": [1] },
+              { "label": "CA FEHA", "text": "Narrower undue-hardship standard (tied to employer resources); narrow BFOQ defense; religious-association exemption for non-profit religious entities; employers <5 excluded; interactive process required even when hardship is asserted.", "citations": [2, 3] }
+            ],
+            "ada_title_ii": [
+              { "text": "“Fundamental alteration” and “undue financial and administrative burden” defenses (written agency-head finding required); direct threat. 2024 DOJ web-rule carve-outs (as of July 2025): archived web content, pre-existing conventional electronic documents not currently used, password-protected/individualized postsecondary course content, third-party content not posted by or at the direction of the public entity, pre-existing social media posts.", "citations": [1, 10] },
+              { "label": "§11135", "text": "Parallel defenses for CA state‑funded entities; CSU ATI treats carve-outs narrowly and documents each invocation through annual ATI reporting.", "citations": [4, 16] }
+            ],
+            "ada_title_iii": [
+              { "text": "“Undue burden” and “fundamental alteration” defenses; religious entities expressly exempt (including commercial operations); private clubs exempt; “readily achievable” threshold for barrier removal in existing facilities; direct threat.", "citations": [1, 9] },
+              { "label": "Unruh", "text": "No blanket religious-entity exemption for commercial activity—turns on whether entity is a “business establishment”; private-club carve-out construed narrowly; bona-fide defenses require proof.", "citations": [6] }
+            ],
+            "rehab_504": [
+              { "text": "Undue financial/administrative burden; fundamental alteration; direct threat; statute reaches only recipients of federal financial assistance. 2024 HHS §504 web-rule carve-outs (as of July 2025) mirror Title II: archived web content, pre-existing conventional documents, password-protected/individualized content, third-party content, pre-existing social media posts.", "citations": [1, 12] },
+              { "label": "§11135", "text": "Same carve-outs for CA state‑funded programs; CSU ATI documents each exception through yearly ATI reporting.", "citations": [4, 16] }
+            ],
+            "rehab_508": [
+              { "text": "“Undue burden” defense (written documentation by agency official); fundamental alteration; national security systems exempt; legacy ICT exception (pre‑Refresh ICT that is not altered); ICT acquired incidental to a contract; micro-purchase threshold; military tactical/weapons command-and-control systems.", "citations": [7, 11] },
+              { "label": "§7405", "text": "Extends §508 exceptions to CA state agencies; CSU ATI requires written Equivalent Facilitation memos or documented exceptions before completing ICT procurement.", "citations": [5, 17] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "content_affected",
+      "label": "Content Affected",
+      "rows": [
+        {
+          "id": "accessibility_requirements_digital",
+          "label": "Accessibility Requirements (Digital)",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Internal HR/training platforms must support assistive tech (screen readers, keyboard nav), captions—tag PDFs, label forms; equal access via interactive process or alternatives.", "citations": [3, 8] }
+            ],
+            "ada_title_ii": [
+              { "text": "Websites, apps, and documents must meet WCAG 2.1 AA: alt text, color contrast, ARIA, captions; CSU ATI supports through systemwide tools and training.", "citations": [10, 8] }
+            ],
+            "ada_title_iii": [
+              { "text": "Customer‑facing digital services must follow WCAG patterns; dynamic content accessible; provide text alternatives; effective communication via auxiliary aids.", "citations": [9, 1] }
+            ],
+            "rehab_504": [
+              { "text": "Digital content must be accessible or a timely alternate provided: e‑text, captions, Braille, audio descriptions; CSU ATI emphasizes for educational content.", "citations": [1, 12] }
+            ],
+            "rehab_508": [
+              { "text": "ICT must conform to 508/WCAG 2.0 AA: keyboard operability, screen reader support, accessible UIs; CSU ATI provides procurement guidelines.", "citations": [7, 11] }
+            ]
+          }
+        },
+        {
+          "id": "types_of_digital_content_affected",
+          "label": "Types of Digital Content Affected",
+          "cells": {
+            "ada_title_i": [
+              { "text": "HR portals, applicant systems, performance dashboards, policy PDFs; online application systems, digital tools.", "citations": [3] }
+            ],
+            "ada_title_ii": [
+              { "text": "Government sites, e‑forms, PDF libraries, emergency alerts, mobile apps; CSU ATI includes university websites and apps.", "citations": [10] }
+            ],
+            "ada_title_iii": [
+              { "text": "E‑commerce sites, booking systems, event registration apps; websites as extensions of services.", "citations": [9] }
+            ],
+            "rehab_504": [
+              { "text": "Course materials, LMS modules, grant portals, telehealth apps; CSU ATI targets Canvas courses, multimedia.", "citations": [12] }
+            ],
+            "rehab_508": [
+              { "text": "Enterprise software, intranet apps, kiosks, digital signage; CSU ATI covers ICT purchases.", "citations": [7] }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "conformance_processes",
+      "label": "Conformance Processes",
+      "rows": [
+        {
+          "id": "web",
+          "label": "Web",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Employment websites—job boards, application portals, benefits enrollment, employee self‑service—must support assistive tech and keyboard operation; inaccessible hiring flows trigger failure‑to‑accommodate and disparate‑treatment claims.", "citations": [1, 8] },
+              { "label": "CA FEHA", "text": "≥5 employees; web barriers actionable pre‑hire; interactive process extends to digital hiring workflows.", "citations": [3, 13] }
+            ],
+            "ada_title_ii": [
+              { "text": "Public‑entity websites and web apps must meet WCAG 2.1 AA under DOJ's 2024 Title II rule; deadlines April 24, 2026 (populations ≥50,000) and April 26, 2027 (smaller jurisdictions, special districts); narrow exceptions for archived and certain third‑party content.", "citations": [10, 8] },
+              { "label": "§11135", "text": "Parallel obligation for CA state‑funded entities; CSU ATI drives systemwide remediation via automated scans, manual audits, and CMM roadmaps.", "citations": [4] }
+            ],
+            "ada_title_iii": [
+              { "text": "Commercial websites tied to public accommodations (retail, hospitality, banking, ticketing, healthcare) must be accessible; no DOJ Title III web rule as of July 2025—WCAG 2.1 AA remains the de facto litigation benchmark; mobile apps and embedded third‑party components are in scope.", "citations": [9, 1] },
+              { "label": "Unruh", "text": "ADA web violations are per se Civ Code §51 violations; unlocks statutory damages ≥$4,000 per incident in CA state court.", "citations": [6] }
+            ],
+            "rehab_504": [
+              { "text": "Recipient web content—university portals, health‑system patient pages, grant portals, telehealth apps—must meet WCAG 2.1 AA per HHS 2024 §504 update; deadline May 2026 (≥15 employees); no blanket exception for legacy web content.", "citations": [12, 8] },
+              { "label": "§11135", "text": "Mirrors §504 for CA state‑funded programs; CSU ATI folds web remediation into annual ATI reporting.", "citations": [4] }
+            ],
+            "rehab_508": [
+              { "text": "Federal agency public‑facing and intranet websites must conform to Revised 508 (WCAG 2.0 AA per 2017 Refresh); VPATs/ACRs required for COTS web products and SaaS; no update to WCAG 2.1/2.2 as of 2025.", "citations": [7, 11] },
+              { "label": "§7405", "text": "Extends §508 to CA state agencies; CSU ATI aligns web‑platform conformance and vendor ACR review with §508.", "citations": [5] }
+            ]
+          }
+        },
+        {
+          "id": "instructional_materials",
+          "label": "Instructional Materials",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Employee training content (manuals, videos) provided in accessible formats as needed upon request (e.g., captioned videos, alternative manuals).", "citations": [3] },
+              { "label": "CA FEHA", "text": "Includes workplace training accessibility as part of equal benefits.", "citations": [3] }
+            ],
+            "ada_title_ii": [
+              { "text": "Course syllabi, slides, videos, PDFs, LMS content must meet WCAG 2.1 AA by 2026; CSU ATI prioritizes documents, multimedia, Canvas courses for accessibility.", "citations": [10, 12] },
+              { "label": "§11135", "text": "California-funded schools follow same; equal access in education programs.", "citations": [4] }
+            ],
+            "ada_title_iii": [
+              { "text": "Private education providers must supply accessible materials; failure triggers ADA/Unruh claims; accessible examinations and courses required.", "citations": [1] }
+            ],
+            "rehab_504": [
+              { "text": "Provide reasonable modifications—Braille, audio, captions—for instructional content; collaborate with disability services; CSU ATI ensures timely access in federally funded CSU programs.", "citations": [1, 12] }
+            ],
+            "rehab_508": [
+              { "text": "Federally-purchased educational software and e-learning modules must meet 508/WCAG standards; CSU ATI applies to ICT for instructional use.", "citations": [7] }
+            ]
+          }
+        },
+        {
+          "id": "ict_procurement_practices",
+          "label": "ICT Procurement Practices",
+          "cells": {
+            "ada_title_i": [
+              { "text": "Employers must procure or adapt assistive technologies to accommodate employees.", "citations": [3] },
+              { "label": "CA FEHA", "text": "AT procurement for smaller employers; consider accessibility to meet obligations.", "citations": [3] }
+            ],
+            "ada_title_ii": [
+              { "text": "Include accessibility in RFPs, review VPATs, enforce vendor remediation timelines; CSU ATI uses structured procurement process with accessibility reviews.", "citations": [7, 5] }
+            ],
+            "ada_title_iii": [
+              { "text": "Private entities should embed accessibility requirements in purchasing policies to avoid liability; select accessible tech for customer-facing services.", "citations": [9] }
+            ],
+            "rehab_504": [
+              { "text": "Procure accessible products or plan accommodations to ensure program participants are not excluded; CSU ATI ensures compliance in federally funded purchases.", "citations": [1] }
+            ],
+            "rehab_508": [
+              { "text": "Section 508 requires federal agencies to buy 508‑conformant ICT; state agencies follow suit under §7405; CSU ATI reviews ICT for accessibility and security during procurement.", "citations": [7, 5] }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1632, "h": 1056, "title": "Poster — Blue & Gold" },
+    { "file": "AltInk.dc.html", "x": 0, "y": 1260, "w": 1632, "h": 1056, "title": "Alt direction — Monochrome ledger (low-fi)" }
+  ],
+  "annotations": [
+    { "id": "poster-brief", "x": 1690, "y": 0, "w": 260, "text": "Back to 11×17 landscape (tabloid), print-ready: Export PDF prints it as one page.\nDenser layout: fuller law scope up top, applies/enforced/benchmark pushed to the card bottoms, enactment years on every law." },
+    { "id": "alt-note", "x": 1690, "y": 1260, "w": 260, "text": "Low-fi alternate: quiet monochrome ledger direction.\nIf you prefer this over blue & gold, ask and I'll build it out fully." }
+  ],
+  "launch": { "view": "focused", "file": "Main.dc.html" }
+}

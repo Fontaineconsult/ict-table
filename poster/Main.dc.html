@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&amp;display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #004b8d; } a:hover { color: #00335f; }
+    .card { display: flex; flex-direction: column; background: #ffffff; border: 1.5px solid #d9d2c3; }
+    .card-head { background: #004b8d; color: #ffffff; padding: 11px 13px 10px 13px; box-sizing: border-box; min-height: 78px; }
+    .head-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .dom { font-size: 9px; letter-spacing: 1.1px; font-weight: 700; color: #ffffff; white-space: nowrap; }
+    .yr { font-size: 12px; font-weight: 800; color: #ffffff; flex-shrink: 0; }
+    .law { font-size: 24px; font-weight: 800; line-height: 1.05; margin-top: 5px; white-space: nowrap; }
+    .act { font-size: 9.5px; margin-top: 4px; font-weight: 400; letter-spacing: 0.3px; }
+    .card-body { padding: 12px 13px; display: flex; flex-direction: column; flex: 1 1 auto; }
+    .lede { font-size: 14px; line-height: 1.35; margin: 0; font-weight: 600; color: #101c2c; }
+    .scope { font-size: 12px; line-height: 1.4; margin: 5px 0 0 0; color: #3f4a5a; }
+    .cluster { margin-top: auto; display: flex; flex-direction: column; gap: 7px; padding-top: 9px; }
+    .rl { font-size: 9.5px; letter-spacing: 1.2px; font-weight: 700; color: #4a4437; }
+    .rv { font-size: 12.5px; font-weight: 600; margin-top: 1px; color: #1d2939; line-height: 1.25; }
+    .chip { border: 2px solid #004b8d; padding: 7px 10px; }
+    .chip-std { font-size: 16px; font-weight: 800; color: #004b8d; }
+    .chip-note { font-size: 11px; color: #3f4a5a; margin-top: 1px; line-height: 1.25; }
+    .card-ca { background: #f2a900; color: #16112b; padding: 10px 13px 11px 13px; box-sizing: border-box; }
+    .ca-label { font-size: 9px; letter-spacing: 1.5px; font-weight: 700; }
+    .ca-law { font-size: 16px; font-weight: 800; margin-top: 2px; }
+    .ca-note { font-size: 12.5px; line-height: 1.3; margin-top: 3px; font-weight: 500; }
+    .rail { text-align: right; padding-right: 2px; padding-top: 1px; }
+    .rail-t { font-size: 14px; font-weight: 900; letter-spacing: 1px; color: #101c2c; line-height: 1.2; }
+    .rail-s { font-size: 9.5px; color: #474135; margin-top: 4px; line-height: 1.3; font-weight: 600; }
+    .px { background: #ffffff; border: 1.5px solid #d9d2c3; padding: 9px 11px; font-size: 12px; line-height: 1.4; color: #1d2939; box-sizing: border-box; }
+    .px p { margin: 0; }
+    .ca-flag { background: #f2a900; color: #16112b; font-weight: 800; font-size: 9px; padding: 1px 4px; letter-spacing: 1px; margin-right: 3px; vertical-align: 1px; }
+  </style>
+</helmet>
+<div style="width: 1632px; height: 1056px; box-sizing: border-box; display: flex; flex-direction: column; background: #faf7f1; padding: 30px 40px 14px 40px; font-family: 'Libre Franklin', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #18202b;">
+
+  <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+    <div>
+      <div style="font-size: 11px; letter-spacing: 2.4px; font-weight: 700; color: #004b8d;">FEDERAL &amp; CALIFORNIA · A QUICK REFERENCE FOR HIGHER EDUCATION</div>
+      <h1 style="margin: 5px 0 0 0; font-size: 58px; font-weight: 900; line-height: 0.95; letter-spacing: -1.2px; color: #101c2c;">Digital Accessibility Law</h1>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px; padding-bottom: 5px;">
+      <div style="display: flex; align-items: center; gap: 8px;"><div style="width: 12px; height: 12px; background: #004b8d;"></div><div style="font-size: 12px; font-weight: 600; color: #3f4a5a;">Federal pillar</div></div>
+      <div style="display: flex; align-items: center; gap: 8px;"><div style="width: 12px; height: 12px; background: #f2a900;"></div><div style="font-size: 12px; font-weight: 600; color: #3f4a5a;">California pairing / overlay</div></div>
+    </div>
+  </div>
+  <div style="height: 4px; background: #f2a900; margin: 12px 0 14px 0;"></div>
+
+  <div style="flex: 1 1 auto; min-height: 0; display: grid; grid-template-columns: 132px repeat(5, minmax(0, 1fr)); grid-template-rows: 1fr auto auto auto; gap: 12px;">
+
+    <div class="rail">
+      <div class="rail-t">THE LAW</div>
+      <div class="rail-s">scope · enforcement · benchmark</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="head-top"><div class="dom">EMPLOYMENT</div><div class="yr">1990</div></div>
+        <div class="law">ADA Title I</div>
+        <div class="act">Americans with Disabilities Act</div>
+      </div>
+      <div class="card-body">
+        <p class="lede">Prohibits disability discrimination in every aspect of employment — hiring, benefits, workplace systems.</p>
+        <p class="scope">Reasonable accommodation for qualified individuals unless undue hardship; direct-threat defense; interactive process expected.</p>
+        <div class="cluster">
+          <div><div class="rl">APPLIES TO</div><div class="rv">Employers with 15+ employees</div></div>
+          <div><div class="rl">ENFORCED BY</div><div class="rv">EEOC · private lawsuits</div></div>
+          <div class="chip"><div class="chip-std">WCAG 2.1 AA</div><div class="chip-note">De facto benchmark via accommodation</div></div>
+        </div>
+      </div>
+      <div class="card-ca">
+        <div class="ca-label">CALIFORNIA</div>
+        <div class="ca-law">FEHA · 1980</div>
+        <div class="ca-note">5+ employees; broader disability definition; interactive process mandatory.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="head-top"><div class="dom">PUBLIC ENTITIES</div><div class="yr">1990</div></div>
+        <div class="law">ADA Title II</div>
+        <div class="act">Americans with Disabilities Act</div>
+      </div>
+      <div class="card-body">
+        <p class="lede">Programs, services, and digital content of state &amp; local government must be equally accessible.</p>
+        <p class="scope">Effective communication required; defenses: fundamental alteration or undue burden, with written agency-head finding; ADA coordinator at 50+ employees.</p>
+        <div class="cluster">
+          <div><div class="rl">APPLIES TO</div><div class="rv">State &amp; local government, incl. public universities</div></div>
+          <div><div class="rl">ENFORCED BY</div><div class="rv">DOJ · private lawsuits</div></div>
+          <div class="chip"><div class="chip-std">WCAG 2.1 AA</div><div class="chip-note">2024 rule — Apr 2026 date reopened</div></div>
+        </div>
+      </div>
+      <div class="card-ca">
+        <div class="ca-label">CALIFORNIA</div>
+        <div class="ca-law">Gov Code §11135 · 1977</div>
+        <div class="ca-note">Mirrors Title II for state-funded activity — the hook for CSU ATI.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="head-top"><div class="dom">PUBLIC ACCOMMODATIONS</div><div class="yr">1990</div></div>
+        <div class="law">ADA Title III</div>
+        <div class="act">Americans with Disabilities Act</div>
+      </div>
+      <div class="card-body">
+        <p class="lede">Public accommodations must give equal access to goods and services — websites and apps included.</p>
+        <p class="scope">Auxiliary aids mandated; defenses: undue burden, fundamental alteration, readily-achievable barrier removal; religious entities &amp; private clubs exempt.</p>
+        <div class="cluster">
+          <div><div class="rl">APPLIES TO</div><div class="rv">Private businesses &amp; nonprofits, incl. private colleges</div></div>
+          <div><div class="rl">ENFORCED BY</div><div class="rv">DOJ · private lawsuits</div></div>
+          <div class="chip"><div class="chip-std">WCAG 2.1 AA</div><div class="chip-note">Litigation benchmark — no web rule yet</div></div>
+        </div>
+      </div>
+      <div class="card-ca">
+        <div class="ca-label">CALIFORNIA</div>
+        <div class="ca-law">Unruh · Civ §51 · 1959</div>
+        <div class="ca-note">ADA violation = state violation; $4,000 min damages per incident.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="head-top"><div class="dom">FEDERAL FUNDING</div><div class="yr">1973</div></div>
+        <div class="law">Section 504</div>
+        <div class="act">Rehabilitation Act of 1973</div>
+      </div>
+      <div class="card-body">
+        <p class="lede">No exclusion from any program or activity that receives federal funds — nearly every campus.</p>
+        <p class="scope">Reasonable modifications &amp; auxiliary aids unless undue hardship; outcome-focused; §504 coordinator at 15+ employees; OCR grievance route.</p>
+        <div class="cluster">
+          <div><div class="rl">APPLIES TO</div><div class="rv">Recipients of federal funds</div></div>
+          <div><div class="rl">ENFORCED BY</div><div class="rv">OCR (ED / HHS) · funding at risk</div></div>
+          <div class="chip"><div class="chip-std">WCAG 2.1 AA</div><div class="chip-note">HHS 2024 rule — May 2026, 15+ staff</div></div>
+        </div>
+      </div>
+      <div class="card-ca">
+        <div class="ca-label">CALIFORNIA</div>
+        <div class="ca-law">Gov Code §11135 · 1977</div>
+        <div class="ca-note">Same duty for every state-funded program and campus.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="head-top"><div class="dom">ICT PROCUREMENT</div><div class="yr">1998</div></div>
+        <div class="law">Section 508</div>
+        <div class="act">Rehabilitation Act · amended 1998</div>
+      </div>
+      <div class="card-body">
+        <p class="lede">Federal agencies must develop, procure, and use accessible ICT — compliance enforced through the purchase.</p>
+        <p class="scope">Undue-burden defense needs written documentation; exceptions: legacy ICT, national-security systems, micro-purchases.</p>
+        <div class="cluster">
+          <div><div class="rl">APPLIES TO</div><div class="rv">Federal agencies &amp; their ICT vendors</div></div>
+          <div><div class="rl">ENFORCED BY</div><div class="rv">Procurement holds · agency compliance review</div></div>
+          <div class="chip"><div class="chip-std">WCAG 2.0 AA</div><div class="chip-note">2017 Refresh — not moved to 2.1</div></div>
+        </div>
+      </div>
+      <div class="card-ca">
+        <div class="ca-label">CALIFORNIA</div>
+        <div class="ca-law">Gov Code §7405 · 2003</div>
+        <div class="ca-note">Applies §508 to CA state agencies — basis for CSU procurement review.</div>
+      </div>
+    </div>
+
+    <div class="rail">
+      <div class="rail-t">WEB</div>
+      <div class="rail-s">sites, apps &amp; portals</div>
+    </div>
+    <div class="px"><p>Job boards, application portals, benefits self-service. Inaccessible hiring flows draw failure-to-accommodate claims. <span class="ca-flag">CA</span>Actionable pre-hire, from 5 employees.</p></div>
+    <div class="px"><p>WCAG 2.1 AA (2024 rule, now reopened); carve-outs: archived content, pre-existing docs, third-party. <span class="ca-flag">CA</span>§11135 parallel; ATI: scans, audits, CMM roadmaps.</p></div>
+    <div class="px"><p>No federal web rule — 2.1 AA is the litigation benchmark; apps &amp; embedded third-party components in scope. <span class="ca-flag">CA</span>ADA web violation is per se Unruh: ≥$4,000 per incident.</p></div>
+    <div class="px"><p>Portals, patient pages, telehealth at 2.1 AA — carve-outs mirror Title II's. <span class="ca-flag">CA</span>§11135 parallel; annual ATI reporting.</p></div>
+    <div class="px"><p>Public &amp; intranet sites at 2.0 AA; VPATs / ACRs for COTS web products &amp; SaaS. <span class="ca-flag">CA</span>§7405 aligns state platforms &amp; vendor ACR review.</p></div>
+
+    <div class="rail">
+      <div class="rail-t">INSTRUCTIONAL MATERIALS</div>
+      <div class="rail-s">courses, LMS, documents &amp; media</div>
+    </div>
+    <div class="px"><p>Training content accessible on request — captions, alternative formats. <span class="ca-flag">CA</span>FEHA: training access counts as equal benefits &amp; privileges.</p></div>
+    <div class="px"><p>Syllabi, slides, PDFs, LMS at 2.1 AA. If the rule stands: password-protected course content excepted only until a student with a disability enrolls. <span class="ca-flag">CA</span>ATI: docs, media, Canvas.</p></div>
+    <div class="px"><p>Private ed providers: accessible exams &amp; courses expressly required; failure triggers ADA + Unruh claims.</p></div>
+    <div class="px"><p>Timely, equally effective formats — Braille, audio, captions — with disability services; the test is effective communication. <span class="ca-flag">CA</span>ATI: timely access.</p></div>
+    <div class="px"><p>Purchased courseware &amp; e-learning must conform — accessibility rides on the buy, not just the build.</p></div>
+
+    <div class="rail">
+      <div class="rail-t">ICT PROCUREMENT</div>
+      <div class="rail-s">purchasing, contracts &amp; vendors</div>
+    </div>
+    <div class="px"><p>Procure or adapt assistive tech as accommodations — licenses, integrations, AT compatibility. <span class="ca-flag">CA</span>Duty from 5 employees.</p></div>
+    <div class="px"><p>Accessibility clauses in RFPs, VPAT / ACR scrutiny, remediation timelines in the contract. <span class="ca-flag">CA</span>ATI structured procurement review.</p></div>
+    <div class="px"><p>Buying accessible customer-facing tech is the cheapest defense — liability attaches to what you deploy.</p></div>
+    <div class="px"><p>Buy accessible, or document the equally effective accommodation plan before rollout.</p></div>
+    <div class="px"><p>Federal purchases must conform to §508. <span class="ca-flag">CA</span>§7405 extends to state agencies; ATI requires Equivalent Facilitation memos before purchase.</p></div>
+
+  </div>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 10.5px; color: #474135;">
+    <div>Sources: ADA.gov · Section508.gov · W3C WAI · leginfo.legislature.ca.gov · CSU ATI</div>
+    <div>CSU ATI (EO 1111) implements these across the CSU · status as of Sep 2026 — verify current rules before citing</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
